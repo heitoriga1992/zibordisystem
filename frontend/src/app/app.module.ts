@@ -29,9 +29,19 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from "@angular/common";
-import { TableProcessComponent } from './components/process/table-process/table-process.component';
 import { ProcessUpdateComponent } from './components/process/process-update/process-update.component';
 import { ProcessDeleteComponent } from './components/process/process-delete/process-delete.component';
+import { ClientCrudComponent } from './views/client-crud/client-crud.component';
+import { AcervoComponent } from './views/acervo/acervo.component';
+import { AaspComponent } from './views/aasp/aasp.component';
+import { AgendaComponent } from './views/agenda/agenda.component';
+import { AudienciaComponent } from './views/audiencia/audiencia.component';
+import { AdmComponent } from './views/adm/adm.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
+import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
+import { ClientReadComponent } from './components/client/client-read/client-read.component';
+import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
 
 registerLocaleData(localePt);
 
@@ -45,9 +55,18 @@ registerLocaleData(localePt);
     ProcessCrudComponent,
     ProcessCreateComponent,
     ProcessReadComponent,
-    TableProcessComponent,
     ProcessUpdateComponent,
     ProcessDeleteComponent,
+    ClientCrudComponent,
+    AcervoComponent,
+    AaspComponent,
+    AgendaComponent,
+    AudienciaComponent,
+    AdmComponent,
+    ClientCreateComponent,
+    ClientDeleteComponent,
+    ClientReadComponent,
+    ClientUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +84,8 @@ registerLocaleData(localePt);
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule
   ],
   providers: [{
     provide: LOCALE_ID,
