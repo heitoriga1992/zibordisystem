@@ -42,6 +42,7 @@ import { ClientCreateComponent } from './components/client/client-create/client-
 import { ClientDeleteComponent } from './components/client/client-delete/client-delete.component';
 import { ClientReadComponent } from './components/client/client-read/client-read.component';
 import { ClientUpdateComponent } from './components/client/client-update/client-update.component';
+import { AaspListarComponent } from './components/aasp/aasp-listar/aasp-listar.component';
 
 registerLocaleData(localePt);
 
@@ -67,6 +68,7 @@ registerLocaleData(localePt);
     ClientDeleteComponent,
     ClientReadComponent,
     ClientUpdateComponent,
+    AaspListarComponent,
   ],
   imports: [
     BrowserModule,

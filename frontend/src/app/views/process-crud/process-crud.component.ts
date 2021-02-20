@@ -14,6 +14,6 @@ export class ProcessCrudComponent implements OnInit {
   }
 
   navigateToProductCreate() {
-    this.router.navigate(['/process/create'])
+    this.router.navigate(['acervo/process/create'])
   }
 }

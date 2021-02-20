@@ -23,10 +23,10 @@ export class ProcessCreateComponent implements OnInit {
   createProcess() {
     this.processService.create(this.process).subscribe(value => {
       this.processService.showMessage("Processo cadastrado com sucesso!");
-      this.router.navigate(["/process"]);
+      this.router.navigate(["acervo/process"]);
     });
   }
   cancel() {
-    this.router.navigate(["/process"]);
+    this.router.navigate(["acervo/process"]);
   }
 }

@@ -28,10 +28,10 @@ export class ProcessDeleteComponent implements OnInit {
   deleteProcess() {
     this.processService.delete(this.process.id).subscribe(() => {
       this.processService.showMessage("Processo deletado com sucesso!");
-      this.router.navigate(["/process"]);
+      this.router.navigate(["acervo/process"]);
     });
   }
   cancel() {
-    this.router.navigate(["/process"]);
+    this.router.navigate(["acervo/process"]);
   }
 }

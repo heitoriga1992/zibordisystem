@@ -28,11 +28,11 @@ export class ProcessUpdateComponent implements OnInit {
   updateProcess() {
     this.processService.update(this.process).subscribe(() => {
       this.processService.showMessage("Processo atualizado com sucesso!");
-      this.router.navigate(["/process"]);
+      this.router.navigate(["acervo/process"]);
     });
   }
 
   cancel() {
-    this.router.navigate(["/process"]);
+    this.router.navigate(["acervo/process"]);
   }
 }

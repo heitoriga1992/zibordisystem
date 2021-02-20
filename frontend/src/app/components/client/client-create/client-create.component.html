@@ -1,1 +1,25 @@
-<p>client-create works!</p>
+<mat-card>
+  <mat-card-title>
+    Novo cliente
+  </mat-card-title>
+  <form>
+    <div class="row">
+      <div class="col-6">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Nome" [(ngModel)]="client.name" name="name">
+        </mat-form-field>
+      </div>
+      <div class="col-6">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Valor" [(ngModel)]="client.price" name="price">
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+  <button mat-raised-button (click)="createClient()">
+    Salvar
+  </button>
+  <button mat-raised-button (click)="cancel()">
+    Cancelar
+  </button>
+</mat-card>

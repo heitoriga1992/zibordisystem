@@ -9,6 +9,28 @@
       "name": "fulano",
       "price": "1234",
       "id": 4
+    },
+    {
+      "name": "sdasdasdqwqwe",
+      "price": "123123",
+      "id": 5
+    }
+  ],
+  "client": [
+    {
+      "name": "asdasd",
+      "price": "123123",
+      "id": 3
+    },
+    {
+      "name": "fulano",
+      "price": "1234",
+      "id": 4
+    },
+    {
+      "name": "sdffasd",
+      "price": "123123",
+      "id": 5
     }
   ]
 }
